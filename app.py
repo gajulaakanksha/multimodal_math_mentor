@@ -197,7 +197,8 @@ def main():
                         st.session_state.current_extracted_text = res["text"]
                         
                         if res["low_confidence"]:
-                            st.warning(f"⚠️ Low audio confidence ({res['confidence']:.0%}). Please review.")
+                            error_msg = f"\n\n**Error:** {res['error']}" if res["error"] else ""
+                            st.warning(f"⚠️ Low audio confidence ({res['confidence']:.0%}). Please review.{error_msg}")
                         else:
                             st.success("Transcription successful!")
                             
