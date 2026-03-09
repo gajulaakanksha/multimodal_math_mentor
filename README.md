@@ -1,4 +1,4 @@
-# Multimodal Math Mentor AI
+# Multi-Agent Math Mentor AI
 
 An end-to-end AI application that solves JEE-style math problems, explains solutions step-by-step, and learns from user feedback over time.
 
